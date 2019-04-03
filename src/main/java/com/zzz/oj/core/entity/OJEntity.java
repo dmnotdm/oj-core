@@ -4,10 +4,9 @@ import com.zzz.util.jpa.entity.JpaEntity;
 
 import lombok.Data;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * Created by zhizhao.zhang on 2019/04/04 03:39.
