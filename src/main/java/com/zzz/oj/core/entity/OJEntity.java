@@ -13,7 +13,7 @@ import javax.persistence.Id;
  * Description:
  */
 @Data
-public class OJEntity implements JpaEntity<Long> {
+public abstract class OJEntity implements JpaEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,4 +24,6 @@ public class OJEntity implements JpaEntity<Long> {
     public Long primaryKey() {
         return id;
     }
+
+    public abstract boolean isInvalid();
 }
